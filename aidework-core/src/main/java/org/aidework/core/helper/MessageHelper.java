@@ -43,7 +43,7 @@ public class MessageHelper {
         return result;
     }
 
-    public static String getSHA256StrJava(String str) {
+    public static String SHA256(String str) {
         MessageDigest messageDigest;
         String encodeStr = "";
         try {
@@ -72,7 +72,7 @@ public class MessageHelper {
         return stringBuffer.toString();
     }
 
-    public static String encodeBySHA256(String str) {
+    public static String DeSHA256(String str) {
 
         if (str == null) {
 

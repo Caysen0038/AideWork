@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adc23eb2-6d22-44ac-b4b8-66afd4105b7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aidework-core/src/main/java/org/aidework/core/helper/MessageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/aidework-core/src/main/java/org/aidework/core/helper/MessageHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aidework-core/src/test/java/MessageTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/aidework-core/src/test/java/MessageTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aidework-core/target/classes/org/aidework/core/helper/MessageHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/aidework-core/target/classes/org/aidework/core/helper/MessageHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aidework-core/target/test-classes/MessageTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/aidework-core/target/test-classes/MessageTester.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,37 +99,61 @@
       <option name="presentableId" value="Default" />
       <updated>1578294532840</updated>
     </task>
+    <task id="LOCAL-00001" summary="将EncriptionHelper更改为MessageHelper">
+      <created>1585405716156</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585405716156</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="将EncriptionHelper更改为MessageHelper" />
+    <option name="LAST_COMMIT_MESSAGE" value="将EncriptionHelper更改为MessageHelper" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Project_Structure" timestamp="1578294917588">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1578294917588" />
+    <state x="276" y="0" key="CommitChangelistDialog2" timestamp="1585405709446">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="276" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585405709446" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1585405538699">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585405538699" />
-    <state width="1323" height="137" key="GridCell.Tab.0.bottom" timestamp="1583515015965">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1585406196039">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="137" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583515015965" />
-    <state width="1323" height="137" key="GridCell.Tab.0.center" timestamp="1583515015964">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585406196039" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1585406196039">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="137" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583515015964" />
-    <state width="1323" height="137" key="GridCell.Tab.0.left" timestamp="1583515015964">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585406196039" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1585406196038">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="137" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583515015964" />
-    <state width="1323" height="137" key="GridCell.Tab.0.right" timestamp="1583515015964">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585406196038" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1585406196039">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="137" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583515015964" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585406196039" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1584194710173">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584194710173" />
+    <state x="275" y="85" key="Vcs.Push.Dialog.v2" timestamp="1585405879490">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="85" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585405879490" />
+    <state x="390" y="155" key="git4idea.merge.GitPullDialog" timestamp="1585406019439">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="155" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1585406019439" />
     <state x="57" y="58" key="new project wizard" timestamp="1578295678697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
