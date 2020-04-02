@@ -1,4 +1,4 @@
-package org.aidework.core.helper;
+package org.aidework.core.data;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package org.aidework.core.helper;
+package org.aidework.core.reflect;
 
 import java.io.File;
 import java.io.FileInputStream;

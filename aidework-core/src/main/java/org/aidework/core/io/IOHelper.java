@@ -1,4 +1,6 @@
-package org.aidework.core.helper;
+package org.aidework.core.io;
+
+import org.aidework.core.io.file.FileHelper;
 
 import java.io.*;
 import java.util.ArrayList;

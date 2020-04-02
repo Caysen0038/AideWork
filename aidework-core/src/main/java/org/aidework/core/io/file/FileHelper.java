@@ -1,4 +1,6 @@
-package org.aidework.core.helper;
+package org.aidework.core.io.file;
+
+import org.aidework.core.io.IOHelper;
 
 import java.io.File;
 import java.io.IOException;

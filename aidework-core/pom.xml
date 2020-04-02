@@ -5,11 +5,11 @@
     <parent>
         <artifactId>aidework</artifactId>
         <groupId>org.aidework</groupId>
-        <version>1.1.2.RELEASE</version>
+        <version>1.2.0.RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <version>1.1.2.RELEASE</version>
+    <version>1.2.0.RELEASE</version>
     <artifactId>aidework-core</artifactId>
 
 
