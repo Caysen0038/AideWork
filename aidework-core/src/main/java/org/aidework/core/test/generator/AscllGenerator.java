@@ -1,4 +1,4 @@
-package org.aidework.core.test;
+package org.aidework.core.test.generator;
 
 public class AscllGenerator {
 

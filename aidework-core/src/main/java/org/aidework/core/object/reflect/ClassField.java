@@ -1,4 +1,4 @@
-package org.aidework.core.reflect;
+package org.aidework.core.object.reflect;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

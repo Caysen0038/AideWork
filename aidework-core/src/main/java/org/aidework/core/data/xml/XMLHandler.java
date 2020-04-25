@@ -1,4 +1,4 @@
-package org.aidework.core.xml;
+package org.aidework.core.data.xml;
 
 
 public interface XMLHandler {

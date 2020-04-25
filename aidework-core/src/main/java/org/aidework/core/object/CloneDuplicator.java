@@ -9,11 +9,10 @@ package org.aidework.core.object;
  *
  */
 
-public class Cloner {
-	
-	
-	public static <T> T clone(Object obj){
-		
+public class CloneDuplicator extends Duplicator {
+
+	@Override
+	public <T> T duplicate(Object src, Class<T> clazz) {
 		return null;
 	}
 }

@@ -1,4 +1,4 @@
-package org.aidework.core.test;
+package org.aidework.core.test.generator;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Random;
