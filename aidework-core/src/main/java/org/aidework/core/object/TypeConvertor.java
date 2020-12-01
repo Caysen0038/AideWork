@@ -21,9 +21,7 @@ import org.aidework.core.constant.AtomicType;
  */
 public class TypeConvertor {
 	
-	
-	
-	
+
 	public static <S,T> T convert(S obj,Class<T> target){
 		if(obj==null||target==null){
 			

@@ -1,4 +1,4 @@
-package org.aidework.core.io.file;
+package org.aidework.core.io;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

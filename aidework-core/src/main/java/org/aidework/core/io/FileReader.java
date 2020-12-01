@@ -1,25 +1,23 @@
 package org.aidework.core.io;
 
+import org.aidework.core.GlobalConfiguration;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * IO工具类
- * 完成指定的IO操作
+ * @author Caysen
+ * @date 2020年7月9日
+ *
+ * 文件读取器
  */
-public class IOHelper {
-    /**
-     * 默认解析编码，当方法中 charset 参数缺省或为null时使用该编码
-     */
-    public static final String DEFAULT_CHARSET="UTF-8";
+public class FileReader implements IOReader{
 
     /**
-     *  静态工具类，禁止实例化
+     * 封闭构造方法
      */
-    private IOHelper(){
-
-    }
+    private FileReader(){}
 
     /**
      * 读取指定路径文件的字节数据
@@ -177,7 +175,7 @@ public class IOHelper {
      * @return
      */
     public static boolean write(String content,String path,boolean append){
-        
+
         return write(content.getBytes(),path,append);
     }
 
@@ -202,7 +200,7 @@ public class IOHelper {
      */
     public static boolean write(String content,String path,String charset,boolean append){
         if(charset==null){
-            charset=DEFAULT_CHARSET;
+            charset= GlobalConfiguration.CHARSET;
         }
         try {
             return write(content.getBytes(charset),path,append);
@@ -259,7 +257,7 @@ public class IOHelper {
             return false;
         }
         if(charset==null){
-            charset=DEFAULT_CHARSET;
+            charset=GlobalConfiguration.CHARSET;
         }
         try {
             return write(content.getBytes(charset),file,append);
@@ -267,7 +265,7 @@ public class IOHelper {
             return write(content.getBytes(),file,append);
         }
     }
-    
+
     /**
      * 将数据写入指定路径的文件中
      * @param data 数据
@@ -421,5 +419,4 @@ public class IOHelper {
     public static boolean append(byte[] data,File file){
         return write(data,file,true);
     }
-
 }

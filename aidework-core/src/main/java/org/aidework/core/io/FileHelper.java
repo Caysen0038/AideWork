@@ -1,9 +1,11 @@
-package org.aidework.core.io.file;
+package org.aidework.core.io;
 
+import org.aidework.core.data.MessageHelper;
 import org.aidework.core.io.IOHelper;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -274,11 +276,22 @@ public class FileHelper {
      * @return 删除是否成功
      */
     public static boolean deleteFile(File file){
-        if(file.isFile())
+        if(file.isFile()){
             return file.delete();
+        }
+
         return false;
     }
 
+    public static boolean compare(String a,String b){
+        return compare(new File(a),new File(b));
+    }
+
+    public static boolean compare(File a,File b){
+        String md5a=getFileMD5(a);
+        String md5b=getFileMD5(b);
+        return md5a!=null && md5b !=null && md5a.equalsIgnoreCase(md5b);
+    }
 
     /**
      * 确定指定文件是否存在，不存在则创建文件
@@ -351,8 +364,10 @@ public class FileHelper {
      */
     public static String getFileSuffix(String path){
         int index=path.lastIndexOf(".");
-        if(index==-1)
+        if(index==-1){
             return null;
+        }
+
         return path.substring(index+1,path.length());
     }
 
@@ -372,12 +387,50 @@ public class FileHelper {
         int i=path.lastIndexOf("/");
         int j=path.lastIndexOf("\\");
         int n=0;
-        if(i>j)
+        if(i>j){
             n=i;
-        else
+        } else{
             n=j;
+        }
+
         return path.substring(n+1,path.length());
     }
 
 
+    public static String getFileMD5(String path){
+        return getFileMD5(new File(path));
+    }
+
+    public static String getFileMD5(File file){
+        InputStream in = null;
+        try {
+            in = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        if(in==null){
+            return null;
+        }
+        StringBuffer md5 = new StringBuffer();
+        MessageDigest md = null;
+        try {
+            md = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        if(md==null){
+            return null;
+        }
+        byte[] dataBytes = new byte[1024];
+        int len;
+        StringBuilder sb=new StringBuilder();
+        try{
+            while ((len = in.read(dataBytes)) >0) {
+                sb.append(new String(dataBytes,0,len));
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        return MessageHelper.MD5(sb.toString());
+    }
 }

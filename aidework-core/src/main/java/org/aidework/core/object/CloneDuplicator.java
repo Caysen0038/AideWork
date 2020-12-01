@@ -5,7 +5,7 @@ package org.aidework.core.object;
  * 
  * @author Caysen
  * 
- * 对象克隆起，更深层次的克隆，不同于object的浅克隆
+ * 对象克隆器，更深层次的克隆，不同于object的浅克隆
  *
  */
 

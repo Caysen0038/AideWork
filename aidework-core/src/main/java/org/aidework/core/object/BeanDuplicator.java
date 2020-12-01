@@ -11,6 +11,8 @@ import java.util.Map;
  * Bean Duplicator
  * 针对Java Bean的复制操作，复制其属性
  * 相对于基类Duplicator,扩展了duplicate方法可传入类型信息返回目标类型
+ *
+ * @author bkc
  */
 public class BeanDuplicator extends Duplicator {
 

@@ -1,5 +1,7 @@
 package org.aidework.core.object.reflect;
 
+import org.aidework.core.utils.OSUtil;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -7,11 +9,20 @@ import java.util.List;
 import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 
+/**
+ *
+ */
 public class ReflectionHelper {
     private static String[] CLASS_PATH_PROP={
             "java.class.path",
             "java.ext.dirs",
             "sun.boot.class.path"};
+
+    /**
+     * 扫描指定包下的类
+     * @param pkgName
+     * @return
+     */
     public static List<String> scanClassInPackage(String pkgName)   {
         List<String> list=new ArrayList<String>();
         String realPath=pkgName.replace(".",File.separator) +File.separator;
@@ -63,12 +74,14 @@ public class ReflectionHelper {
     private static List<File> getClassPath(){
         List<File> ret=new ArrayList<File>();
         String delim=":";
-        if(System.getProperty("os.name").indexOf("Windows")!=-1)
+        if(OSUtil.isWindows()){
             delim=";";
+        }
         for(String pro:CLASS_PATH_PROP)   {
             String[] pathes=System.getProperty(pro).split(delim);
-            for(String path:pathes)
+            for(String path:pathes){
                 ret.add(new File(path));
+            }
         }
         return ret;
     }
